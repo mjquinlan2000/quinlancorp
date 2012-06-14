@@ -1,11 +1,11 @@
 Quinlancorp::Application.routes.draw do
-  resources :user_sessions
+  resources :user_sessions, :only => [:new, :create, :destroy]
 
   resources :users
 
   resources :posts
   
-  root :to => "posts#index"
+  root :to => "user_sessions#new"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
