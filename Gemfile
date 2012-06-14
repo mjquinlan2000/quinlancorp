@@ -23,3 +23,5 @@ end
 gem 'jquery-rails'
 
 gem 'twitter-bootstrap-rails'
+
+gem 'authlogic'
