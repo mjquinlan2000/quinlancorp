@@ -25,3 +25,5 @@ gem 'jquery-rails'
 gem 'twitter-bootstrap-rails'
 
 gem 'authlogic'
+
+gem 'declarative_authorization'
