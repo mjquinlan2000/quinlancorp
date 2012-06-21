@@ -2,6 +2,7 @@
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
 </div>
+<%= will_paginate @posts, :class => 'paginator'%>
 <table class="table table-striped span8">
   <thead>
     <tr>
@@ -11,6 +12,8 @@
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
+  <tfoot>
+  </tfoot>
   <tbody>
     <% @posts.each do |post| %>
       <tr>

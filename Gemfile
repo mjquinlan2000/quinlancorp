@@ -27,3 +27,5 @@ gem 'twitter-bootstrap-rails'
 gem 'authlogic'
 
 gem 'declarative_authorization'
+
+gem 'will_paginate'
