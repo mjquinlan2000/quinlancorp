@@ -6,6 +6,9 @@ Quinlancorp::Application.routes.draw do
   resources :posts
   
   root :to => "user_sessions#new"
+  
+  get "login", :controller => "user_sessions", :action => "new"
+  get "logout", :controller => "user_sessions", :action => "destroy"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
