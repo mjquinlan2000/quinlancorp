@@ -1,15 +1,9 @@
-<h1>New user_session</h1>
+<h1>Welcome, Please Login!</h1>
 
 <%= form_for(@user_session) do |f| %>
   <% if @user_session.errors.any? %>
     <div id="error_explanation">
       <h2>Invalid Login!</h2>
-
-      <ul>
-      <% @user_session.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
     </div>
   <% end %>
 

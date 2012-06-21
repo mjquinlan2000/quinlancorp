@@ -5,5 +5,8 @@ authorization do
   
   role :regular do
     has_permission_on :posts, :to => [:index, :show, :create, :new]
+    has_permission_on :posts, :to => [:edit, :update, :destroy] do
+      if_attribute :user => is { user }
+    end
   end
 end

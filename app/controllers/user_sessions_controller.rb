@@ -25,6 +25,10 @@ class UserSessionsController < ApplicationController
   # GET /user_sessions/new
   # GET /user_sessions/new.json
   def new
+    if current_user
+      redirect_to posts_path
+      return
+    end
     @user_session = UserSession.new
 
     respond_to do |format|
